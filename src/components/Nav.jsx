@@ -1,12 +1,23 @@
 import React from "react";
+import Img from "../Design/zeddlogo.svg";
+import {
+  Wrapper,
+  Leftdiv,
+  MiddleDiv,
+  Rightdiv,
+  ButtonL,
+  ButtonG,
+  Image,
+  Ul,
+} from "./styles/Nav.styled";
 
 const Nav = () => {
   return (
     <>
       <Wrapper>
         <Leftdiv>
-          <Image />
-          <h1></h1>
+          <Image src={Img} />
+          <h1>Zeddpay</h1>
         </Leftdiv>
         <MiddleDiv>
           <Ul>

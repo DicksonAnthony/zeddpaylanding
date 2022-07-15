@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import { Wrapper, Cards } from "./styles/Contents.styled";
 
 const Contents = () => {
   return (
-    <div>Contents</div>
-  )
-}
+    <Wrapper>
+      <Cards></Cards>
+      <Cards></Cards>
+      <Cards></Cards>
+      <Cards></Cards>
+      <Cards></Cards>
+    </Wrapper>
+  );
+};
 
-export default Contents
+export default Contents;
