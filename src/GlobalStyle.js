@@ -4,6 +4,7 @@ export const GlobalStyle = createGlobalStyle`
     :root{
         --buttonText: #fff;
         --navColor: #fafafa;
+        --hoverBtn: #3195EB;
         --headingColor: #121212;
         --primaryColor: #007de8;
         --paragraphColor: rgba(0,25,46,.5)!important;

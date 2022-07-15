@@ -4,6 +4,7 @@ import Contents from "./components/Contents";
 import Footer from "./components/Footer";
 import Nav from "./components/Nav";
 import { GlobalStyle } from "./GlobalStyle";
+
 function App() {
   return (
     <>
@@ -15,5 +16,4 @@ function App() {
     </>
   );
 }
-
 export default App;
