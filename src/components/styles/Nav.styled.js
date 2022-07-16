@@ -71,6 +71,7 @@ export const ButtonG = styled.button`
     background-color: var(--hoverBtn);
   }
 `;
+// Mobile nav styles
 export const Wrappermobile = styled.nav`
   position: relative;
 
@@ -117,9 +118,11 @@ export const Ulmobile = styled.ul`
   align-items: center;
   flex-direction: column;
   background: var(--buttonText);
-  transition: all 0.7s ease-in-out;
+  transition: all 0.8s ease-in-out;
   transform: ${({ mobile }) =>
     mobile ? "translateX(0)" : "translateX(-100%)"};
+  opacity: ${({ mobile }) => (mobile ? "100%" : "30%")};
+
   li {
     margin-top: 20px;
   }

@@ -1,19 +1,32 @@
 import React from "react";
-import { Wrapper, Cards, Desc } from "./styles/Contents.styled";
+import Img from "../Design/phone1.png";
+import {
+  Wrapper,
+  Cards,
+  Desc,
+  H1,
+  Div,
+  Image,
+  Text,
+} from "./styles/Contents.styled";
 
 const Contents = () => {
   return (
     <Wrapper>
       <Cards>
-        <h1>Purchase anything online with your airtime</h1>
-        <Desc>
-          Shop online, go premuim, get assets, pay for services and most
-          importantly purchase that new Call of Duty weapon with airtime
-        </Desc>
-      </Cards>
-      <Cards>
-        <h1></h1>
-        <Desc></Desc>
+        <Text>
+          <H1>
+            Purchase anything online
+            <br /> with your airtime
+          </H1>
+          <Desc>
+            Shop online, go premuim, get assets, pay for services and most
+            importantly purchase that new Call of Duty weapon with airtime
+          </Desc>
+        </Text>
+        <Div>
+          <Image src={Img}></Image>
+        </Div>
       </Cards>
     </Wrapper>
   );
