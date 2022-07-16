@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.nav`
-  height: 90px;
+  height: 80px;
   display: flex;
   padding: 0 35px;
   align-items: center;
@@ -27,7 +27,7 @@ export const Ul = styled.ul`
   gap: 50px;
   display: flex;
   list-style: none;
-  font-size: 0.9rem;
+  font-size: 10px;
   align-items: center;
   color: rgba(18, 18, 18, 0.5);
   justify-content: space-between;
@@ -36,6 +36,7 @@ export const Ul = styled.ul`
     transition: all 0.3s ease-in-out;
 
     &:hover {
+      cursor: pointer;
       transform: scale(0.935);
     }
   }
@@ -48,25 +49,29 @@ export const Rightdiv = styled.div`
 `;
 export const ButtonL = styled.button`
   color: #00e8be;
-  padding: 15px 43px;
+  font-size: 10px;
+  padding: 15px 35px;
   border-radius: 25px;
   background: transparent;
   border: 1px solid #00e8be;
   transition: all 0.4s ease-in-out;
 
   &:hover {
+    cursor: pointer;
     transform: scale(0.935);
   }
 `;
 export const ButtonG = styled.button`
   border: none;
-  padding: 15px 60px;
+  font-size: 10px;
+  padding: 15px 50px;
   border-radius: 25px;
   color: var(--buttonText);
   background: var(--primaryColor);
   transition: all 0.4s ease-in-out;
 
   &:hover {
+    cursor: pointer;
     transform: scale(0.935);
     background-color: var(--hoverBtn);
   }
