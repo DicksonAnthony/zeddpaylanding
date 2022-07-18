@@ -2,14 +2,14 @@ import React from "react";
 import HeroOne from "./components/HeroOne";
 import Nav from "./components/Nav";
 import { GlobalStyle } from "./GlobalStyle";
-import HeroTwo from "./components/HeroTwo";
+// import HeroTwo from "./components/HeroTwo";
 
 function App() {
   return (
     <>
       <Nav />
       <HeroOne />
-      <HeroTwo />
+      {/* <HeroTwo /> */}
       <GlobalStyle />
     </>
   );

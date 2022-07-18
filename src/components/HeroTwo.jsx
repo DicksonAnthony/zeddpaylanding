@@ -1,10 +1,16 @@
 import React from "react";
 import Img from "../Design/phone2.png";
-import Img2 from "../Design/phone3";
-import Img3 from "../Design/phone4";
-import Img4 from "../Design/phone5";
+import Img2 from "../Design/phone3.png";
+import Img3 from "../Design/phone4.png";
+// import Img4 from "../Design/phone5.png";
 
-import { Container, Cards, CardsItem, Image } from "./styles/HeroTwo.styled";
+import {
+  Container,
+  Cards,
+  CardsItem,
+  Image,
+  CardImg,
+} from "./styles/HeroTwo.styled";
 
 const HeroTwo = () => {
   return (
@@ -41,7 +47,7 @@ const HeroTwo = () => {
           <p>
             Purchase hundreds of services directly on zeddpay, no credit card.
           </p>
-          <CardImg src={Img4} />
+          <CardImg src={Img} />
         </CardsItem>
       </Cards>
     </>

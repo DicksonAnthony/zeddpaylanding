@@ -125,7 +125,7 @@ export const Ulmobile = styled.ul`
   height: 100%;
   list-style: none;
   position: fixed;
-  padding-top: 200px;
+  padding-top: 100px;
   align-items: center;
   flex-direction: column;
   background: var(--buttonText);

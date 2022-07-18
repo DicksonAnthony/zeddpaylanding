@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Imgz from "../../Design/heroTop.svg";
 import Img from "../../Design/heroDoodle.svg";
 
 export const Wrapper = styled.div`
@@ -10,6 +11,10 @@ export const Cards = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
+
+  @media screen and (max-width: 964px) {
+    flex-direction: column;
+  }
 `;
 export const ButtonC = styled.button`
   border: none;
@@ -39,14 +44,8 @@ export const Div = styled.div`
   border-radius: 15px;
   align-items: flex-end;
   justify-content: center;
-  background-image: url(${Img});
+  background-image: url(${Imgz});
   background-color: var(--primaryColor);
-`;
-export const Realdiv = styled.div`
-  display: flex;
-  min-width: 350px;
-  align-items: center;
-  justify-content: center;
 `;
 export const Image = styled.img`
   height: auto;
@@ -60,6 +59,7 @@ export const Cont = styled.div`
 
   h1 {
     font-size: 40px;
+    padding-right: 30px;
   }
 `;
 export const H2 = styled.h1`

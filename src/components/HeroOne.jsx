@@ -11,7 +11,6 @@ import {
   Desc2,
   Div,
   Image,
-  Realdiv,
   Cont,
   Head2,
   H2,
@@ -28,10 +27,7 @@ const Contents = () => {
     <Wrapper>
       <Cards>
         <Cont>
-          <h1>
-            Purchase anything online
-            <br /> with your airtime.
-          </h1>
+          <h1>Purchase anything online with your airtime.</h1>
           <Desc>
             Shop online, go premuim, get assets, pay for services and most
             importantly purchase that new Call of Duty weapon with airtime
@@ -40,11 +36,9 @@ const Contents = () => {
             <ButtonC>Get Started</ButtonC>
           </div>
         </Cont>
-        <Realdiv>
-          <Div>
-            <Image src={Img}></Image>
-          </Div>
-        </Realdiv>
+        <Div>
+          <Image src={Img}></Image>
+        </Div>
       </Cards>
       <Head2>
         <H2>The easiest way to shop and make purchase online</H2>
