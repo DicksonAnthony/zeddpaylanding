@@ -57,9 +57,7 @@ const Contents = () => {
         <Threecards>
           <Three>
             <Icondiv>
-              <div>
-                <Swap />
-              </div>
+              <Swap />
             </Icondiv>
             <h4>Convert airtime to zeddcoin</h4>
             <p>Zeddpay converts your aitime to zeddcoin within minutes</p>
