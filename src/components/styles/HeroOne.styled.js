@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Img from "../../Design/heroTop.svg";
+import Img from "../../Design/heroDoodle.svg";
 
 export const Wrapper = styled.div`
   margin: 7rem 3% auto;
@@ -12,11 +12,10 @@ export const Cards = styled.div`
   justify-content: space-around;
 `;
 export const ButtonC = styled.button`
-  width: 35%;
   border: none;
   font-size: 15px;
   font-weight: 600;
-  padding: 15px 50px;
+  padding: 15px 70px;
   border-radius: 25px;
   color: var(--buttonText);
   background: var(--primaryColor);
@@ -58,6 +57,10 @@ export const Cont = styled.div`
   position: relative;
   flex-direction: column;
   justify-content: flex-start;
+
+  h1 {
+    font-size: 40px;
+  }
 `;
 export const H2 = styled.h1`
   font-size: 35px;
@@ -72,7 +75,7 @@ export const Desc2 = styled.p`
 `;
 export const Head2 = styled.div`
   max-width: 100%;
-  margin-top: 150px;
+  margin-top: 160px;
 `;
 export const Threecards = styled.div`
   display: flex;
@@ -85,7 +88,7 @@ export const Three = styled.div`
   gap: 3rem;
   width: 30%;
   border-radius: 10px;
-  padding: 15px 0 20px 10px;
+  padding: 15px 5px 25px 15px;
   background-size: cover;
   background-color: #f9f9f9;
   background-position: center;

@@ -18,7 +18,7 @@ const MobileNav = () => {
 
   return (
     <Wrappermobile>
-      <WrapperNav>
+      <WrapperNav mobile={mobile}>
         <LeftdivMobile>
           <Image src={Img} />
           <h1>Zeddpay</h1>

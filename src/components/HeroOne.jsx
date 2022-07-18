@@ -1,8 +1,9 @@
 import React from "react";
 import Img from "../Design/phone1.png";
-import { GrCurrency as Swap } from "react-icons/gr";
+import { FaWallet as Swap } from "react-icons/fa";
 import { RiCoupon3Fill as Buy } from "react-icons/ri";
 import { RiShieldCheckFill as Safe } from "react-icons/ri";
+import { Zoom } from "react-awesome-reveal";
 import {
   Wrapper,
   Cards,
@@ -20,7 +21,7 @@ import {
   Icondiv2,
   Icondiv3,
   ButtonC,
-} from "./styles/Contents.styled";
+} from "./styles/HeroOne.styled";
 
 const Contents = () => {
   return (
@@ -29,13 +30,15 @@ const Contents = () => {
         <Cont>
           <h1>
             Purchase anything online
-            <br /> with your airtime
+            <br /> with your airtime.
           </h1>
           <Desc>
             Shop online, go premuim, get assets, pay for services and most
             importantly purchase that new Call of Duty weapon with airtime
           </Desc>
-          <ButtonC>Get Started</ButtonC>
+          <div>
+            <ButtonC>Get Started</ButtonC>
+          </div>
         </Cont>
         <Realdiv>
           <Div>
@@ -50,29 +53,33 @@ const Contents = () => {
           importantly purchase that new Call of Duty weapon with airtime.
         </Desc2>
       </Head2>
-      <Threecards>
-        <Three>
-          <Icondiv>
-            <Swap />
-          </Icondiv>
-          <h4>Convert airtime to zeddcoin</h4>
-          <p>Zeddpay converts your aitime to zeddcoin within minutes</p>
-        </Three>
-        <Three>
-          <Icondiv2>
-            <Buy />
-          </Icondiv2>
-          <h4>Make purchases with airtime</h4>
-          <p>Zeddpay enables users to easily make purchases with airtime.</p>
-        </Three>
-        <Three>
-          <Icondiv3>
-            <Safe />
-          </Icondiv3>
-          <h4>Secured and safe transaction</h4>
-          <p>Zeddpay offers a secure and safe transaction process</p>
-        </Three>
-      </Threecards>
+      <Zoom duration={1500}>
+        <Threecards>
+          <Three>
+            <Icondiv>
+              <div>
+                <Swap />
+              </div>
+            </Icondiv>
+            <h4>Convert airtime to zeddcoin</h4>
+            <p>Zeddpay converts your aitime to zeddcoin within minutes</p>
+          </Three>
+          <Three>
+            <Icondiv2>
+              <Buy />
+            </Icondiv2>
+            <h4>Make purchases with airtime</h4>
+            <p>Zeddpay enables users to easily make purchases with airtime.</p>
+          </Three>
+          <Three>
+            <Icondiv3>
+              <Safe />
+            </Icondiv3>
+            <h4>Secured and safe transaction</h4>
+            <p>Zeddpay offers a secure and safe transaction process</p>
+          </Three>
+        </Threecards>
+      </Zoom>
     </Wrapper>
   );
 };

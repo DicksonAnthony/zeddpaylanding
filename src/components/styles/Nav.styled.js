@@ -50,7 +50,7 @@ export const Rightdiv = styled.div`
 export const ButtonL = styled.button`
   color: #00e8be;
   font-size: 12px;
-  padding: 15px 35px;
+  padding: 15px 45px;
   border-radius: 25px;
   background: transparent;
   border: 1px solid #00e8be;
@@ -64,7 +64,7 @@ export const ButtonL = styled.button`
 export const ButtonG = styled.button`
   border: none;
   font-size: 12px;
-  padding: 15px 50px;
+  padding: 16px 60px;
   border-radius: 25px;
   color: var(--buttonText);
   background: var(--primaryColor);
@@ -88,12 +88,16 @@ export const Wrappermobile = styled.nav`
   }
 `;
 export const WrapperNav = styled.div`
+  width: 100%;
   height: 80px;
+  z-index: 400;
   display: flex;
   padding: 0 35px;
   align-items: center;
   background: var(--navColor);
   justify-content: space-between;
+  top: ${({ mobile }) => mobile && "0"};
+  position: ${({ mobile }) => (mobile ? "fixed" : "relative")};
 `;
 export const LeftdivMobile = styled.div`
   display: flex;
@@ -113,13 +117,15 @@ export const RightdivMobile = styled.div`
   color: var(--primaryColor);
 `;
 export const Ulmobile = styled.ul`
+  top: 0;
   gap: 60px;
   width: 100vw;
   display: flex;
-  z-index: 100;
-  height: 100vh;
+  z-index: 300;
+  height: 100%;
   list-style: none;
-  position: absolute;
+  position: fixed;
+  padding-top: 200px;
   align-items: center;
   flex-direction: column;
   background: var(--buttonText);
