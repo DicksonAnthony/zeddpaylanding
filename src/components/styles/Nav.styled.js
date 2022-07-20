@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 export const Wrapper = styled.nav`
   height: 85px;
@@ -22,6 +23,10 @@ export const Leftdiv = styled.div`
     font-weight: 700px;
   }
 `;
+export const Link = styled(NavLink)`
+  text-decoration: none;
+  color: var(--paragraphColor);
+`;
 export const Image = styled.img``;
 export const Ul = styled.ul`
   gap: 50px;
@@ -38,6 +43,14 @@ export const Ul = styled.ul`
     &:hover {
       cursor: pointer;
       transform: scale(0.935);
+    }
+  }
+  a {
+    color: var(--paragraphColor);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--headingColor);
     }
   }
 `;
@@ -136,5 +149,9 @@ export const Ulmobile = styled.ul`
 
   li {
     margin-top: 20px;
+  }
+  a {
+    text-decoration: none;
+    color: var(--paragraphColor);
   }
 `;

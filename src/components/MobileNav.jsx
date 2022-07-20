@@ -6,6 +6,7 @@ import {
   RightdivMobile,
   Ulmobile,
   Image,
+  Link,
 } from "./styles/Nav.styled";
 import Img from "../Design/zeddlogo.svg";
 import { FaBars as Menubtn } from "react-icons/fa";
@@ -27,11 +28,21 @@ const MobileNav = () => {
           <Menubtn />
         </RightdivMobile>
       </WrapperNav>
-      <Ulmobile mobile={mobile}>
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Contact</li>
-        <li>Rates</li>
+      <Ulmobile mobile={mobile} onClick={toggle}>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About Us</Link>
+        </li>
+        <li>
+          <a href="https://twitter.com" target="_blank">
+            Contact
+          </a>
+        </li>
+        <li>
+          <Link to="/rates">Rates</Link>
+        </li>
       </Ulmobile>
     </Wrappermobile>
   );

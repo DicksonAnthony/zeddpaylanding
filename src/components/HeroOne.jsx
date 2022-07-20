@@ -7,13 +7,10 @@ import { Zoom } from "react-awesome-reveal";
 import {
   Wrapper,
   Cards,
-  Desc,
-  Desc2,
   Div,
   Image,
   Cont,
   Head2,
-  H2,
   Threecards,
   Three,
   Icondiv,
@@ -28,10 +25,10 @@ const Contents = () => {
       <Cards>
         <Cont>
           <h1>Purchase anything online with your airtime.</h1>
-          <Desc>
+          <p>
             Shop online, go premuim, get assets, pay for services and most
             importantly purchase that new Call of Duty weapon with airtime
-          </Desc>
+          </p>
           <div>
             <ButtonC>Get Started</ButtonC>
           </div>
@@ -41,11 +38,11 @@ const Contents = () => {
         </Div>
       </Cards>
       <Head2>
-        <H2>The easiest way to shop and make purchase online</H2>
-        <Desc2>
+        <h1>The easiest way to shop and make purchase online</h1>
+        <p>
           Shop online, go premium, get assets, pay for services and most
           importantly purchase that new Call of Duty weapon with airtime.
-        </Desc2>
+        </p>
       </Head2>
       <Zoom duration={1500}>
         <Threecards>

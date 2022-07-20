@@ -8,8 +8,10 @@ import {
   ButtonG,
   Image,
   Ul,
+  Link,
 } from "./styles/Nav.styled";
 import MobileNav from "../components/MobileNav";
+
 const Nav = () => {
   return (
     <>
@@ -20,10 +22,20 @@ const Nav = () => {
           <h1>Zeddpay</h1>
         </Leftdiv>
         <Ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Contact</li>
-          <li>Rates</li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About Us</Link>
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank">
+              Contact
+            </a>
+          </li>
+          <li>
+            <Link to="/rates">Rates</Link>
+          </li>
         </Ul>
         <Rightdiv>
           <ButtonL>Log in</ButtonL>

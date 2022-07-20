@@ -3,8 +3,12 @@ import Imgz from "../../Design/heroTop.svg";
 import Img from "../../Design/heroDoodle.svg";
 
 export const Wrapper = styled.div`
-  margin: 7rem 3% auto;
-  padding: 2rem 5%;
+  margin: 112px 3% auto;
+  padding: 32px 5%;
+
+  @media screen and (max-width: 964px) {
+    margin: 30px 3% auto;
+  }
 `;
 export const Cards = styled.div`
   gap: 35px;
@@ -14,6 +18,33 @@ export const Cards = styled.div`
 
   @media screen and (max-width: 964px) {
     flex-direction: column;
+  }
+`;
+export const Cont = styled.div`
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  h1 {
+    font-size: 40px;
+    padding-right: 30px;
+  }
+  p {
+    font-size: 20px;
+    margin: 30px auto;
+    color: var(--paragraphColor);
+  }
+  @media screen and (max-width: 964px) {
+    text-align: center;
+
+    h1 {
+      font-size: 25px;
+      padding-right: 0;
+    }
+    p {
+      font-size: 15px;
+    }
   }
 `;
 export const ButtonC = styled.button`
@@ -31,61 +62,71 @@ export const ButtonC = styled.button`
     transform: scale(0.935);
     background-color: var(--hoverBtn);
   }
-`;
-export const Desc = styled.p`
-  font-size: 15px;
-  margin: 30px auto;
-  color: var(--paragraphColor);
+
+  @media screen and (max-width: 964px) {
+    width: 100%;
+  }
 `;
 export const Div = styled.div`
-  min-height: 300px;
-  max-width: 1000px;
+  width: 100%;
   display: flex;
+  min-height: 400px;
   border-radius: 15px;
   align-items: flex-end;
   justify-content: center;
   background-image: url(${Imgz});
   background-color: var(--primaryColor);
+
+  @media screen and (max-width: 964px) {
+    min-height: 100%;
+  }
 `;
 export const Image = styled.img`
   height: auto;
   max-width: 70%;
-`;
-export const Cont = styled.div`
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  justify-content: flex-start;
-
-  h1 {
-    font-size: 40px;
-    padding-right: 30px;
+  @media screen and (max-width: 964px) {
+    max-width: 100%;
   }
-`;
-export const H2 = styled.h1`
-  font-size: 35px;
-  text-align: center;
-`;
-export const Desc2 = styled.p`
-  font-size: 20px;
-  margin: 30px auto;
-  text-align: center;
-  padding: 0 150px;
-  color: var(--paragraphColor);
 `;
 export const Head2 = styled.div`
   max-width: 100%;
   margin-top: 160px;
+
+  h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+  p {
+    font-size: 20px;
+    margin: 30px auto;
+    text-align: center;
+    padding: 0 150px;
+    color: var(--paragraphColor);
+  }
+  @media screen and (max-width: 964px) {
+    margin-top: 140px;
+    h1 {
+      font-size: 25px;
+    }
+    p {
+      padding: 0;
+      font-size: 15px;
+    }
+  }
 `;
 export const Threecards = styled.div`
+  gap: 3rem;
   display: flex;
   text-align: left;
   margin-top: 50px;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (max-width: 964px) {
+    flex-direction: column;
+  }
 `;
 export const Three = styled.div`
-  gap: 3rem;
   width: 30%;
   border-radius: 10px;
   padding: 15px 5px 25px 15px;
@@ -96,6 +137,10 @@ export const Three = styled.div`
 
   p {
     color: var(--paragraphColor);
+  }
+
+  @media screen and (max-width: 964px) {
+    width: 100%;
   }
 `;
 export const Icondiv = styled.div`

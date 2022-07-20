@@ -1,15 +1,18 @@
 import React from "react";
-import HeroOne from "./components/HeroOne";
+import Home from "./components/pages/Home";
 import Nav from "./components/Nav";
 import { GlobalStyle } from "./GlobalStyle";
-// import HeroTwo from "./components/HeroTwo";
+import Footer from "./components/Footer";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <>
       <Nav />
-      <HeroOne />
-      {/* <HeroTwo /> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      <Footer />
       <GlobalStyle />
     </>
   );
