@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
   }
 `;
 export const Cards = styled.div`
-  gap: 35px;
+  gap: ${({ gap }) => gap || "35px"};
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
@@ -25,6 +25,7 @@ export const Cont = styled.div`
   position: relative;
   flex-direction: column;
   justify-content: flex-start;
+  flex-basis: ${({ flex }) => flex || null};
 
   h1 {
     font-size: 40px;
@@ -68,14 +69,15 @@ export const ButtonC = styled.button`
   }
 `;
 export const Div = styled.div`
+  position: relative;
   width: 100%;
   display: flex;
   min-height: 400px;
   border-radius: 15px;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: ${({ justify }) => justify || "center"};
   background-image: url(${Imgz});
-  background-color: var(--primaryColor);
+  background-color: ${({ color }) => color || "var(--primaryColor)"};
 
   @media screen and (max-width: 964px) {
     min-height: 100%;

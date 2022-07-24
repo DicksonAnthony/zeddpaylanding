@@ -5,15 +5,15 @@ export const Wrapper = styled.div`
   margin-top: 50px;
   padding: 0 50px;
   @media screen and (max-width: 964px) {
-    padding: 0 15px;
+    padding: 0 20px;
   }
 `;
 export const Container = styled.div`
+  gap: 100px;
   display: flex;
   align-items: center;
   margin-bottom: 50px;
   padding-bottom: 30px;
-  justify-content: space-between;
   border-bottom: 2px solid #f6f6f7;
 
   h1 {
@@ -30,10 +30,11 @@ export const Container = styled.div`
 
   @media screen and (max-width: 964px) {
     gap: 22px;
+    align-items: flex-start;
     flex-direction: column;
 
     p {
-      text-align: center;
+      text-align: left;
     }
   }
 `;
@@ -44,9 +45,9 @@ export const Head = styled.div`
   align-items: center;
   margin-bottom: 25px;
 
-  @media screen and (max-width: 964px) {
+  /* @media screen and (max-width: 964px) {
     justify-content: center;
-  }
+  } */
 `;
 export const Div = styled.div`
   width: 25%;
@@ -58,21 +59,52 @@ export const Div = styled.div`
 `;
 export const Icon = styled.div`
   gap: 10px;
+  font-size: 20px;
   display: flex;
   margin-top: 20px;
   align-items: center;
 
   @media screen and (max-width: 964px) {
+    display: none;
     justify-content: center;
+  }
+`;
+export const Icon2 = styled.div`
+  font-size: 20px;
+  display: none;
+
+  @media screen and (max-width: 964px) {
+    gap: 10px;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
   }
 `;
 export const Div1 = styled.div`
   @media screen and (max-width: 964px) {
+    width: 100%;
     display: flex;
+    text-align: left;
     margin-bottom: auto;
-    text-align: center;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    flex-direction: column;
+  }
+`;
+export const Control = styled.div`
+  gap: 50px;
+  display: flex;
+  flex-basis: 70%;
+  align-items: center;
+  justify-content: flex-start;
+`;
+export const Division = styled.div`
+  gap: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: 964px) {
     flex-direction: column;
   }
 `;

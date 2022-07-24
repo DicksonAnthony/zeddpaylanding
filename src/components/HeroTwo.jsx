@@ -97,8 +97,8 @@ const HeroTwo = () => {
             </li>
             <li>
               <Lidiv>
-                Would the airtime you recharge be the some exact amount in your
-                wallet?
+                Would the airtime you recharge be the some <br /> exact amount
+                in your wallet?
                 <Icondiv>
                   <Icon />
                 </Icondiv>

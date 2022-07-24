@@ -29,7 +29,7 @@ const Nav = () => {
             <Link to="/about">About Us</Link>
           </li>
           <li>
-            <a href="https://twitter.com" target="_blank">
+            <a href="https://twitter.com" target="_blank" rel="noreferrer">
               Contact
             </a>
           </li>

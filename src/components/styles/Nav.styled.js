@@ -26,6 +26,11 @@ export const Leftdiv = styled.div`
 export const Link = styled(NavLink)`
   text-decoration: none;
   color: var(--paragraphColor);
+
+  &:hover,
+  &:active {
+    color: var(--headingColor);
+  }
 `;
 export const Image = styled.img``;
 export const Ul = styled.ul`
@@ -49,7 +54,8 @@ export const Ul = styled.ul`
     color: var(--paragraphColor);
     text-decoration: none;
 
-    &:hover {
+    &:hover,
+    &:active &:visited {
       color: var(--headingColor);
     }
   }
