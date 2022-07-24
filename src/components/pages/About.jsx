@@ -1,16 +1,18 @@
 import React from "react";
 import Img from "../../Design/phone1.png";
 import styled from "styled-components";
-// import Img2 from "../../Design/finger.svg";
+import Img2 from "../../Design/finger.svg";
 import { Cards, Cont, Image, Div, Wrapper } from "../styles/HeroOne.styled";
 
 const Move = styled.div`
-  top: 40%;
-  left: 40%;
+  top: 30%;
+  left: 30%;
   position: absolute;
   color: var(--buttonText);
 `;
 const One = styled.p`
+  font-weight: 700;
+  font-size: 30px;
   margin-left: 5px;
   margin-bottom: 10px;
 `;
@@ -24,7 +26,7 @@ const Three = styled(One)`
 const About = () => {
   return (
     <Wrapper>
-      <Cards gap="60px">
+      <Cards gap="60px" margin="60px">
         <Div>
           <Image src={Img}></Image>
         </Div>
@@ -74,7 +76,7 @@ const About = () => {
             <Two>Airtime</Two>
             <Three>Superpowers</Three>
           </Move>
-          <Image src={Img} />
+          <Image src={Img2} />
         </Div>
       </Cards>
     </Wrapper>

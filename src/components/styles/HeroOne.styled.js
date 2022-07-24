@@ -11,10 +11,11 @@ export const Wrapper = styled.div`
   }
 `;
 export const Cards = styled.div`
-  gap: ${({ gap }) => gap || "35px"};
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
+  gap: ${({ gap }) => gap || "35px"};
+  margin-bottom: ${({margin}) => margin || "auto"};
 
   @media screen and (max-width: 964px) {
     flex-direction: column;

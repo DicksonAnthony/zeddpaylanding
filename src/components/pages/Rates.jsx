@@ -1,8 +1,8 @@
 import React from "react";
-import GLO from "../../Design/zeddlogo.svg";
-import MTN from "../../Design/zeddlogo.svg";
-import AIRTEL from "../../Design/zeddlogo.svg";
-import MOBILE from "../../Design/zeddlogo.svg";
+import GLO from "../../Design/glo-brand.svg";
+import MTN from "../../Design/mtn-brand.svg";
+import AIRTEL from "../../Design/airtel-brand.svg";
+import MOBILE from "../../Design/9mobile-brand.svg";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
@@ -47,17 +47,12 @@ const One = styled.p`
   }
 `;
 const Img = styled.img`
-  display: none;
-  @media screen and (max-width: 964px) {
-    display: block;
-  }
+  display: block;
 `;
 const Flex = styled.div`
-  @media screen and (max-width: 964px) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+  gap: 5px;
+  display: flex;
+  align-items: center;
 `;
 
 const Rates = () => {
