@@ -148,6 +148,7 @@ export const AccordianContainer = styled.div`
   }
 `;
 export const Main = styled.div`
+  flex-basis: 50%;
   h1 {
     margin-bottom: 15px;
   }

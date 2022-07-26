@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
+import { Data } from "./Data";
 import Img from "../Design/phone2.png";
 import Img2 from "../Design/phone3.png";
 import Img3 from "../Design/phone4.png";
 import Img4 from "../Design/phone1.png";
 import Wman from "../Design/woman.svg";
-import { FaPlus as Icon } from "react-icons/fa";
+import { FaPlus as Icon, FaMinus as Icon2 } from "react-icons/fa";
 import {
   Ul,
   Cards,
@@ -24,8 +25,17 @@ import {
   Container,
   AccordianContainer,
 } from "./styles/HeroTwo.styled";
+import styled from "styled-components";
 
 const HeroTwo = () => {
+  const [clicked, setClicked] = useState(false);
+  const toggle = (index) => {
+    if (clicked === index) {
+      return setClicked(null);
+    }
+    setClicked(index);
+  };
+
   return (
     <>
       <Container>
@@ -87,87 +97,27 @@ const HeroTwo = () => {
           <h1>Here are some frequently asked questions</h1>
           <p>We answered some questions so you do not need to ask them</p>
           <Ul>
-            <li>
-              <Lidiv>
-                Can i use my bonus airtime?
-                <Icondiv>
-                  <Icon />
-                </Icondiv>
-              </Lidiv>
-            </li>
-            <li>
-              <Lidiv>
-                Would the airtime you recharge be the some <br /> exact amount
-                in your wallet?
-                <Icondiv>
-                  <Icon />
-                </Icondiv>
-              </Lidiv>
-            </li>
-            <li>
-              <Lidiv>
-                What is ZCN/ zedd coin?
-                <Icondiv>
-                  <Icon />
-                </Icondiv>
-              </Lidiv>
-            </li>
-            <li>
-              <Lidiv>
-                What can i purchase with ZCN?
-                <Icondiv>
-                  <Icon />
-                </Icondiv>
-              </Lidiv>
-            </li>
-            <li>
-              <Lidiv>
-                VPN, Urgh how, why??😤
-                <Icondiv>
-                  <Icon />
-                </Icondiv>
-              </Lidiv>
-            </li>
-            <li>
-              <Lidiv>
-                I am stuck😭, what should i do?
-                <Icondiv>
-                  <Icon />
-                </Icondiv>
-              </Lidiv>
-            </li>
-            <li>
-              <Lidiv>
-                To Change your MTN Share PIN
-                <Icondiv>
-                  <Icon />
-                </Icondiv>
-              </Lidiv>
-            </li>
-            <li>
-              <Lidiv>
-                To Change your Glo Share PIN
-                <Icondiv>
-                  <Icon />
-                </Icondiv>
-              </Lidiv>
-            </li>
-            <li>
-              <Lidiv>
-                To Change your Airtel Share PIN
-                <Icondiv>
-                  <Icon />
-                </Icondiv>
-              </Lidiv>
-            </li>
-            <li>
-              <Lidiv>
-                To Change your 9mobile Share PIN
-                <Icondiv>
-                  <Icon />
-                </Icondiv>
-              </Lidiv>
-            </li>
+            {Data.map((item, index) => {
+              return (
+                <>
+                  <li>
+                    <Lidiv>
+                      <P>
+                        <p>{item.question}</p>
+                      </P>
+                      <Icondiv onClick={() => toggle(index)} key={index}>
+                        {clicked === index ? <Icon2 /> : <Icon />}
+                      </Icondiv>
+                    </Lidiv>
+                    {clicked === index ? (
+                      <Wrap>
+                        <p>{item.answer}</p>
+                      </Wrap>
+                    ) : null}
+                  </li>
+                </>
+              );
+            })}
           </Ul>
         </Main>
         <WomanDiv>
@@ -177,5 +127,22 @@ const HeroTwo = () => {
     </>
   );
 };
+const Wrap = styled.div`
+  margin: 30px 0 0;
+  padding-right: 50px;
 
+  p {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--headingColor);
+  }
+`;
+const P = styled.div`
+  flex-basis: 70%;
+  p {
+    text-align: left;
+    color: var(--headingColor);
+  }
+`;
 export default HeroTwo;
