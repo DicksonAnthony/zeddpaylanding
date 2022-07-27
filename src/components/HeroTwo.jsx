@@ -26,6 +26,7 @@ import {
   AccordianContainer,
 } from "./styles/HeroTwo.styled";
 import styled from "styled-components";
+import Carousel from "./Carousel";
 
 const HeroTwo = () => {
   const [clicked, setClicked] = useState(false);
@@ -35,7 +36,6 @@ const HeroTwo = () => {
     }
     setClicked(index);
   };
-
   return (
     <>
       <Container>
@@ -92,6 +92,7 @@ const HeroTwo = () => {
           </CardsItem>
         </Three>
       </Cards>
+      <Carousel />
       <AccordianContainer>
         <Main>
           <h1>Here are some frequently asked questions</h1>

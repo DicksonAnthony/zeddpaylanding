@@ -69,6 +69,7 @@ export const Cards = styled.div`
   margin: 80px 80px 0;
   @media screen and (max-width: 964px) {
     margin: 80px 20px 0;
+    display: none;
   }
 `;
 export const Head = styled.div`
