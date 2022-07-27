@@ -34,7 +34,7 @@ const Contents = () => {
           </div>
         </Cont>
         <Div>
-          <Image src={Img}></Image>
+          <Image src={Img} alt="" />
         </Div>
       </Cards>
       <Head2>

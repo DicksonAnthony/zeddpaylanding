@@ -15,7 +15,7 @@ export const Cards = styled.div`
   align-items: flex-start;
   justify-content: space-around;
   gap: ${({ gap }) => gap || "35px"};
-  margin-bottom: ${({margin}) => margin || "auto"};
+  margin-bottom: ${({ margin }) => margin || "auto"};
 
   @media screen and (max-width: 964px) {
     flex-direction: column;
@@ -82,6 +82,7 @@ export const Div = styled.div`
 
   @media screen and (max-width: 964px) {
     min-height: 100%;
+    order: ${({ order }) => order || null};
   }
 `;
 export const Image = styled.img`

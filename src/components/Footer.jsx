@@ -23,7 +23,7 @@ const Footer = () => {
       <Container>
         <Div>
           <Head>
-            <Image src={Img} />
+            <Image src={Img} alt="" />
             <h1>Zeddpay</h1>
           </Head>
           <p>

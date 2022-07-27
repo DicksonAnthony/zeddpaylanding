@@ -11,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
         --backgroundGradient: linear-gradient(161.48deg,#007de8 -47.77%,rgba(0,232,190,0) 146.51%);
     }
     *{
+
         margin: 0;
         padding: 0;
         box-sizing: border-box;

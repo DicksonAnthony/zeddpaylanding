@@ -105,7 +105,7 @@ export const Three = styled.div`
 `;
 export const CardsItem = styled.div`
   width: 30%;
-  display: flex;
+  display: flex !important;
   border-radius: 10px;
   padding: 15px 10px 0;
   align-items: center;

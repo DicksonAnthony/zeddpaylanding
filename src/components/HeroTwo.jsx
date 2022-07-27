@@ -50,7 +50,7 @@ const HeroTwo = () => {
           </div>
         </div>
         <Imgdiv>
-          <Image src={Img} />
+          <Image src={Img} alt="" />
         </Imgdiv>
       </Container>
       <Cards>
@@ -68,7 +68,7 @@ const HeroTwo = () => {
               minutes.
             </p>
             <Imgdiv2>
-              <CardImg src={Img2} />
+              <CardImg src={Img2} alt="" />
             </Imgdiv2>
           </CardsItem>
           <CardsItem>
@@ -78,7 +78,7 @@ const HeroTwo = () => {
               minutes.
             </p>
             <Imgdiv2>
-              <CardImg src={Img3} />
+              <CardImg src={Img3} alt="" />
             </Imgdiv2>
           </CardsItem>
           <CardsItem>
@@ -87,7 +87,7 @@ const HeroTwo = () => {
               Purchase hundreds of services directly on zeddpay, no credit card.
             </p>
             <Imgdiv2>
-              <CardImg src={Img4} size="93%" />
+              <CardImg src={Img4} size="93%" alt="" />
             </Imgdiv2>
           </CardsItem>
         </Three>

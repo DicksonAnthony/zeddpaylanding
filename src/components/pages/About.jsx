@@ -9,6 +9,10 @@ const Move = styled.div`
   left: 30%;
   position: absolute;
   color: var(--buttonText);
+  @media screen and (max-width: 964px) {
+    top: 20%;
+    left: 20%;
+  } ;
 `;
 const One = styled.p`
   font-weight: 700;
@@ -27,7 +31,7 @@ const About = () => {
   return (
     <Wrapper>
       <Cards gap="60px" margin="60px">
-        <Div>
+        <Div order="1">
           <Image src={Img}></Image>
         </Div>
         <Cont flex="95%">

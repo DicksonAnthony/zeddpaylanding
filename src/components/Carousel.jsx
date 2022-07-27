@@ -1,45 +1,23 @@
 import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 import Img2 from "../Design/phone3.png";
 import Img3 from "../Design/phone4.png";
 import Img4 from "../Design/phone1.png";
 import { CardsItem, Head, Imgdiv2, CardImg } from "./styles/HeroTwo.styled";
-import styled from "styled-components";
+import { Cont, Flex2, Wrapper, CarouselSlide } from "./styles/Carousel.styled";
 
 const Carousel = () => {
   const settings = {
     dots: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
-  const slide = {
-    div: {
-      gap: "3rem",
-      width: "95%",
-      display: "flex",
-      textAlign: "center",
-      marginTop: "30px",
-      alignItems: "center",
-      justifyContent: "space-between",
-    },
-  };
-  const Flex = styled.div`
-    margin: 80px 80px 0;
-    @media screen and (max-width: 964px) {
-      margin: 80px 20px 0;
-    }
-  `;
-  const Flex2 = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  `;
+
   return (
-    <>
-      <Flex>
+    <Wrapper>
+      <Cont>
         <Head>
           <h1>Get started in 3 easy steps</h1>
           <p>
@@ -47,7 +25,7 @@ const Carousel = () => {
           </p>
         </Head>
         <Flex2>
-          <Slider {...settings} style={slide.div}>
+          <CarouselSlide {...settings}>
             <CardsItem>
               <h1>Create a free account</h1>
               <p>
@@ -55,7 +33,7 @@ const Carousel = () => {
                 minutes.
               </p>
               <Imgdiv2>
-                <CardImg src={Img2} />
+                <CardImg src={Img2} alt="" />
               </Imgdiv2>
             </CardsItem>
             <CardsItem>
@@ -65,7 +43,7 @@ const Carousel = () => {
                 minutes.
               </p>
               <Imgdiv2>
-                <CardImg src={Img3} />
+                <CardImg src={Img3} alt="" />
               </Imgdiv2>
             </CardsItem>
             <CardsItem>
@@ -75,13 +53,13 @@ const Carousel = () => {
                 card.
               </p>
               <Imgdiv2>
-                <CardImg src={Img4} size="93%" />
+                <CardImg src={Img4} size="93%" alt="" />
               </Imgdiv2>
             </CardsItem>
-          </Slider>
+          </CarouselSlide>
         </Flex2>
-      </Flex>
-    </>
+      </Cont>
+    </Wrapper>
   );
 };
 
