@@ -10,7 +10,7 @@ import { Cont, Flex2, Wrapper, CarouselSlide } from "./styles/Carousel.styled";
 const Carousel = () => {
   const settings = {
     dots: true,
-    speed: 1000,
+    speed: 6000,
     autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
