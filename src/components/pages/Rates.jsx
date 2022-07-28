@@ -16,11 +16,11 @@ const Wrapper = styled.div`
 `;
 const Cont = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 
   p {
-    padding: 0 0 25px;
+    padding: 0 0 30px;
   }
   h1 {
     font-size: 20px;

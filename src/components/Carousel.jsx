@@ -11,8 +11,10 @@ const Carousel = () => {
   const settings = {
     dots: true,
     speed: 1000,
+    autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplaySpeed: 0,
   };
 
   return (
