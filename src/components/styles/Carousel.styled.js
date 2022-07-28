@@ -4,6 +4,12 @@ import Slider from "react-slick";
 export const CarouselSlide = styled(Slider)`
   margin-top: 30px;
   text-align: center;
+  .slick-slide > div {
+    margin: 0 10px;
+  }
+  .slick-list {
+    margin: 0 -10px;
+  }
   .slick-dots {
     bottom: -35px;
   }
